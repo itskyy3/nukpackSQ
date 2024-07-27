@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Prodotti</a></li>
+                <li><a href="cart.html">Carrello</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="checkout-form">
+            <form onsubmit="return completePurchase()">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Indirizzo:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="payment">Metodo di Pagamento:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit-card">Carta di Credito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button type="submit">Completa Acquisto</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shop Online</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
